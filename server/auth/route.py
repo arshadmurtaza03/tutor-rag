@@ -17,6 +17,7 @@ def authenticate(credentials:HTTPBasicCredentials=Depends(security)):
         "username":user_record["username"],
         "fullname":user_record["fullname"],
         "email":user_record["email"],
+        "role":user_record["role"],
     }
 
 
@@ -34,6 +35,7 @@ def signup_student(req:StudentUser):
         "email":req.email,
         "username":req.username,
         "password":hashed_password,
+        "role":"Student",
         "grade":req.grade,
         "school":req.school,
     })
@@ -55,6 +57,7 @@ def teacher_student(req:TeacherUser):
         "email":req.email,
         "username":req.username,
         "password":hashed_password,
+        "role":"Teacher",
         "school":req.school,
     })
     return {"message":"Teacher user created successfully"}
