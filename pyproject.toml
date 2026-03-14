@@ -1,0 +1,25 @@
+[project]
+name = "tutor-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "bcrypt>=5.0.0",
+    "fastapi>=0.135.1",
+    "langchain>=1.2.12",
+    "langchain-community>=0.4.1",
+    "langchain-core>=1.2.19",
+    "langchain-google-genai>=4.2.1",
+    "langchain-groq>=1.1.2",
+    "pinecone>=8.1.0",
+    "pydantic>=2.12.5",
+    "pymongo[bson]>=4.16.0",
+    "pypdf>=6.8.0",
+    "python-dotenv>=1.2.2",
+    "python-multipart>=0.0.22",
+    "requests>=2.32.5",
+    "streamlit>=1.55.0",
+    "tqdm>=4.67.3",
+    "uvicorn[standard]>=0.41.0",
+]
